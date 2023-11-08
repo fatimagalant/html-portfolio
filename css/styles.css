@@ -1,0 +1,280 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display+SC:wght@700&family=Poppins:wght@300&display=swap');
+
+/*Global Styles*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+h1{
+    text-align: center;
+    font-size: 150px;
+    font-family: 'Playfair Display SC', serif;
+    padding-top: 2.5rem;
+    z-index: -1;
+    opacity: 0.1;
+   }
+   h2{
+    text-align: center;
+    font-size: 75px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2.5rem;
+   }
+p{
+    font-family: var(--font-p);
+    font-weight: 600;
+}
+a:hover{
+    color: cornflowerblue;
+}
+/*End of Global Styles*/
+
+/* Root Styles*/
+:root {
+    --bg-color-1: #161925;
+    --bg-color-2: #EBEBD3;
+    --text-color-1:#EBEBD3;
+    --text-color-2:#161925;
+    --font-p:'Poppins', sans-serif;
+    --nav-link: #EBEBD3;
+    --hover:cornflowerblue;
+    --heading-font: 'Montserrat', sans-serif;
+    --heading-size: 75px;
+    --subtitle-font: 'Montserrat', sans-serif;
+    --subtitle-size: 50px;
+
+    /*Light Theme*/
+    /*Dark Theme*/
+}
+/*End of Root Styles*/
+
+/*Nav Styles*/
+nav{
+    display: flex;
+    text-decoration: none;
+    padding: 20px;  
+    font-size: 20px;
+    justify-content: end;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color-1);
+    position: fixed;
+    width: 100%;
+}
+/* .nav-links{
+    display: flex;
+    flex-wrap: wrap;
+} */
+li{
+    display: inline;
+    list-style-type: none;
+    padding-left: 20px;
+    justify-content: end;
+}
+a{
+    text-decoration: none;
+    color: var(--nav-link);
+}
+.contact-button{
+    padding: 10px;
+    border-radius: 3rem;
+    background-color: cornflowerblue;
+    border: 0;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.contact-button:hover{
+    background-color: rgb(0, 0, 0);
+    border: 0;
+    font-family:  'Montserrat', sans-serif;
+    color: #EBEBD3;
+    transform: scale(1.1);
+}
+/*End of Nav Styles*/
+
+/*Home Styles*/
+#Home{
+    min-height: 100vh;
+  background-color: var(--bg-color-2);
+  color: var(--text-color-2);
+}
+/*  
+#home-img-column{
+    display: flex;
+    flex-wrap: wrap;
+} */
+.home-img{
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+    margin-top: 9rem;
+    z-index: revert-layer;
+}
+
+.heading{
+  font-family: var(--heading-font);
+  font-size: var(--heading-size);
+  margin-top: 18rem;
+  z-index: 2;
+
+}
+.subtitle{
+    font-family: var(--subtitle-font);
+ font-size: var(--subtitle-size);
+ z-index: 2;
+}
+/*End of Home Styles*/
+
+/*About Styles*/
+#About{
+    min-height: 100vh;
+    padding: 20px;
+  background-color: var(--bg-color-1);
+  color: var(--text-color-1);
+}
+#html{
+    font-size: 100px;
+    color: #994000;
+}
+#css{
+    font-size: 100px;
+    color: rgb(46, 96, 190);
+}
+#js{
+    font-size: 100px;
+    color: yellow;
+}
+.column{
+    float: left;
+    width: 50%;
+}
+
+.about-img{
+    margin-left: 70px;  
+    /* width: 400px;
+    height: 600px; */
+    justify-content: center;
+    object-fit: cover;
+    z-index: -1;
+    margin-top: -75px;
+}
+.about-text{
+    margin-top: 4rem;
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skills{
+ justify-content: center;
+}
+
+/*End of About Styles*/
+
+/*Resume Styles*/
+#Resume{
+    min-height: 100vh;
+    background-color: var(--bg-color-2);
+    color: var(--text-color-2);
+}
+/*End of Resume Styles*/
+
+/*Projects Styles*/
+#Projects{
+    min-height: 100vh;
+    background-color: var(--bg-color-1);
+    color: var(--text-color-1);
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-img{
+    width: 400px;
+    height: 400px;
+}
+/*End of Projects Styles*/
+
+/*Contact Styles*/
+#Contact{
+    min-height: 100vh;
+    background-color: var(--bg-color-2);
+    color: var(--text-color-2);
+}
+/*End of Contact Styles*/
+
+/*Media Responsiveness*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* nav {
+        display: flex;
+        text-decoration: none;
+        padding: 20px;
+        font-size: 20px;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        background-color: var(--bg-color-1);
+        position: fixed;
+        width: 100%;
+    } */
+    h1{
+        /* text-align: center; */
+        font-size: 50px;
+        /* font-family: 'Playfair Display SC', serif;
+        padding-top: 2.5rem; */
+        z-index: -1;
+        opacity: 0.1;
+       }
+       h2{
+        text-align: center;
+        font-size: 50px;
+        /* font-family: 'Playfair Display SC', serif; */
+        padding-top: 2.0rem;
+        opacity: 0.1;
+       }
+       .about-img {
+        /* width: 200px;
+        height: 200px;
+        justify-content: center; */
+        display: none;
+    }
+    #column1{
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    h1{
+        /* text-align: center; */
+        font-size: 75px;
+        /* font-family: 'Playfair Display SC', serif;
+        padding-top: 2.5rem; */
+        z-index: -1;
+        opacity: 0.1;
+       }
+       
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    h1{
+        /* text-align: center; */
+        font-size: 100px;
+        /* font-family: 'Playfair Display SC', serif;
+        padding-top: 2.5rem; */
+        z-index: -1;
+        opacity: 0.1;
+       }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+/*End of Media Responsiveness*/
