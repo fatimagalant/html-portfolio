@@ -10,7 +10,7 @@
 }
 h1{
     text-align: center;
-    font-size: 150px;
+    font-size: 175px;
     font-family: var(--heading-font);
     padding-top: 2.5rem;
     opacity: 0.1;
@@ -130,21 +130,22 @@ a{
     background-size: cover;
     filter: grayscale();
     min-height: 100vh;
-  background-color: var(--bg-color-1);
-  color: var(--text-color-1);
+    background-color: var(--bg-color-1);
+    color: var(--text-color-1);
 }
 
 .heading{
   font-family: var(--heading-font);
-  font-size: 5rem;
+  font-size: 6rem;
   z-index: 1;
   padding-top: 20rem;
+  text-shadow: 10px 5px 10px #000;
 }
 .subtitle{
     font-family: var(--subtitle-font);
  font-size: var(--subtitle-size);
  z-index: 2;
- text-shadow: 2px 2px 2px #202020b2;
+ text-shadow: 10px 5px 10px #000;;
  display: flex;
  justify-content: center;
 }
@@ -199,7 +200,6 @@ a{
 #wordpress{
     font-size: 100px;
     background-color: rgb(39, 119, 151);
-    /* color: cornflowerblue; */
 }
 #elementor{
     font-size: 100px;
@@ -332,9 +332,10 @@ a{
 
 /*Footer Styles*/
 footer{
+    background-color: #000;
     position: fixed;
-    height: 2px;
-}
+    height: 20px;
+}   
 /*End of Footer Styles*/
 /*Media Responsiveness*/
 /* Extra small devices (phones, 600px and down) */
@@ -354,9 +355,9 @@ footer{
     #column1{
         display: none;
     }
-    #sticky-column{
+    /* #sticky-column{
         display: none;
-    }
+    } */
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -373,13 +374,13 @@ footer{
             z-index: -1;
             /* margin-top: -75px; */
         }
-        #column1{
+        /* #column1{
             /* float: left;
             width: 50%; */
-        }
-        #sticky-column{
+       /* } */
+        /* #sticky-column{
             display: none;
-        }
+        } */
         
       
 }
