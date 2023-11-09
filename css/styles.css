@@ -1,5 +1,5 @@
 /*Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display+SC:wght@700&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@700&family=Playfair+Display+SC:wght@700&family=Poppins:wght@300&display=swap');
 
 /*Global Styles*/
 *{
@@ -11,7 +11,7 @@
 h1{
     text-align: center;
     font-size: 150px;
-    font-family: 'Playfair Display SC', serif;
+    font-family: var(--heading-font);
     padding-top: 2.5rem;
     opacity: 0.1;
    }
@@ -30,7 +30,7 @@ p{
     font-weight: 600;
 }
 a:hover{
-    color: cornflowerblue;
+    color: var(--accent-color);
     text-decoration:underline;
 }
 .row{
@@ -44,17 +44,18 @@ a:hover{
 
 /* Root Styles*/
 :root {
-    --bg-color-1: #161925;
-    --bg-color-2: #EBEBD3;
-    --text-color-1:#EBEBD3;
-    --text-color-2:#161925;
+    --bg-color-1: #000;
+    --bg-color-2: #fff;
+    --text-color-1:#fff;
+    --text-color-2:#000;
     --font-p:'Poppins', sans-serif;
-    --nav-link: #EBEBD3;
+    --nav-link: #fff;
     --hover:cornflowerblue;
-    --heading-font: 'Montserrat', sans-serif;
+    --heading-font: 'Archivo Black', sans-serif;
     --heading-size: 75px;
     --subtitle-font: 'Montserrat', sans-serif;
     --subtitle-size: 50px;
+    --accent-color: #0E402D;    
 
     /*Light Theme*/
     /*your light theme styles go here*/
@@ -84,21 +85,23 @@ li{
 }
 a{
     text-decoration: none;
-    color: var(--nav-link);
+    color: var(--text-color-1);
 }
 .contact-button{
     padding: 10px;
     border-radius: 3rem;
-    background-color: cornflowerblue;
+    background-color: var(--accent-color);
+    color: var(--text-color-1);
     border: 0;
     font-family:  'Montserrat', sans-serif;
     font-size: 20px;
 }
 .contact-button:hover{
-    background-color: rgb(0, 0, 0);
+    background-color: var(--text-color-1);
     border: 0;
     font-family:  'Montserrat', sans-serif;
-    color: #EBEBD3;
+    color: var(--accent-color);
+    border: var(--bg-color-1);
     transform: scale(1.1);
 }
 /*End of Nav Styles*/
@@ -106,17 +109,8 @@ a{
 /*Home Styles*/
 #Home{
     min-height: 100vh;
-  background-color: var(--bg-color-2);
-  color: var(--text-color-2);
-}
-
-.home-img{
-    width: 800px;
-    height: 600px;
-    object-fit: cover;
-    margin-top: 9rem;
-    z-index: revert-layer;
-    filter: drop-shadow(0px 10px 3px black);
+  background-color: var(--bg-color-1);
+  color: var(--text-color-1);
 }
 
 .heading{
@@ -124,7 +118,6 @@ a{
   font-size: var(--heading-size);
   margin-top: 18rem;
   z-index: 2;
-  text-shadow: 2px 2px 2px #202020b2;
 
 }
 .subtitle{
