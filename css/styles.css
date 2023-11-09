@@ -25,6 +25,11 @@ h1{
     font-size: var(--subtitle-size);
     font-family: var(--subtitle-font);
    }
+   h6{
+    font-family: var(--font-p);
+    font-size: 20px;
+    font-weight: 600;
+   }
 p{
     font-family: var(--font-p);
     font-weight: 600;
@@ -40,12 +45,22 @@ a:hover{
 .card{
     border: 1px black;
 }
+
+#sticky-column{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+   align-items:flex-end;
+   width: 100%;
+   padding: 20px;
+   margin-top: -168px;
+}
 /*End of Global Styles*/
 
 /* Root Styles*/
 :root {
     --bg-color-1: #000;
-    --bg-color-2: #fff;
+    --bg-color-2: #0E402D;
     --text-color-1:#fff;
     --text-color-2:#000;
     --font-p:'Poppins', sans-serif;
@@ -75,6 +90,7 @@ nav{
     background-color: var(--bg-color-1);
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 li{
@@ -108,6 +124,10 @@ a{
 
 /*Home Styles*/
 #Home{
+    background-image: url(https://i.postimg.cc/BvpnN2y9/technology-digital-wave-background-conceptbeautiful-motion-waving-dots-texture-with-glowing-focused.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
   background-color: var(--bg-color-1);
   color: var(--text-color-1);
@@ -115,16 +135,29 @@ a{
 
 .heading{
   font-family: var(--heading-font);
-  font-size: var(--heading-size);
-  margin-top: 18rem;
-  z-index: 2;
-
+  font-size: 5rem;
+  z-index: 1;
+  padding-top: 20rem;
 }
 .subtitle{
     font-family: var(--subtitle-font);
  font-size: var(--subtitle-size);
  z-index: 2;
  text-shadow: 2px 2px 2px #202020b2;
+ display: flex;
+ justify-content: center;
+}
+
+#sticky-column{
+    font-size: 45px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+#linkedin{
+    color: rgb(33, 106, 201);
+    font-size: 20px;
+    position: fixed;
 }
 /*End of Home Styles*/
 
@@ -143,11 +176,54 @@ a{
     font-size: 100px;
     color: rgb(46, 96, 190);
 }
+#bootstrap{
+    font-size: 100px;
+    color: blueviolet;
+}
 #js{
     font-size: 100px;
     color: yellow;
 }
-.column{
+#vue{
+    font-size: 100px;
+    color: #158a5d;
+}
+#node{
+    font-size: 100px;
+    color: rgb(3, 172, 3);
+}
+#databases{
+    font-size: 100px;
+}
+#wordpress{
+    font-size: 100px;
+    background-color: rgb(39, 119, 151);
+    /* color: cornflowerblue; */
+}
+#elementor{
+    font-size: 100px;
+    color: pink;
+}
+#php{
+    font-size: 100px;
+    color: cornflowerblue;
+}
+#react{
+    font-size: 100px;
+    color: deepskyblue;
+}
+#sass{
+    font-size: 100px;
+    color: palevioletred;
+}
+#less{
+    font-size: 100px;
+    color:dodgerblue;
+}
+#github{
+    font-size: 100px;
+}
+#column1{
     float: left;
     width: 50%;
 }
@@ -182,7 +258,7 @@ a{
 }
 
 #resume-container{
-    background-color: #dadada;
+    /* background-color: #dadada; */
 }
 /*End of Resume Styles*/
 
@@ -273,10 +349,10 @@ footer{
         padding-top: 2.0rem;
         opacity: 0.1;
        }
-       .about-img {
+    #column1{
         display: none;
     }
-    #column1{
+    #sticky-column{
         display: none;
     }
 }
@@ -288,7 +364,22 @@ footer{
         z-index: -1;
         opacity: 0.1;
        }
-       
+        .about-img {
+            /* margin-left: 70px; */
+            justify-content: center;
+            object-fit: cover;
+            z-index: -1;
+            /* margin-top: -75px; */
+        }
+        #column1{
+            /* float: left;
+            width: 50%; */
+        }
+        #sticky-column{
+            display: none;
+        }
+        
+      
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -298,6 +389,14 @@ footer{
         z-index: -1;
         opacity: 0.1;
        }
+       .about-img {
+        /* margin-left: 70px; */
+        justify-content: center;
+        object-fit: cover;
+        z-index: -1;
+        /* margin-top: -75px; */
+    }
+    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
