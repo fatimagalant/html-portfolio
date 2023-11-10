@@ -39,7 +39,7 @@ a:hover{
     text-decoration:underline;
 }
 .row{
-    padding: 40px;;
+    padding: 30px;
 }
 
 .card{
@@ -243,7 +243,7 @@ a{
 .container{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
 }
 .skills{
  justify-content: center;
