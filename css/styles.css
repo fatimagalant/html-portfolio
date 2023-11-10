@@ -55,6 +55,10 @@ a:hover{
    padding: 20px;
    margin-top: -168px;
 }
+
+i{
+    padding: 15px;
+}
 /*End of Global Styles*/
 
 /* Root Styles*/
@@ -127,7 +131,7 @@ a{
     background-image: url(https://i.postimg.cc/BvpnN2y9/technology-digital-wave-background-conceptbeautiful-motion-waving-dots-texture-with-glowing-focused.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
     filter: grayscale();
     min-height: 100vh;
     background-color: var(--bg-color-1);
@@ -355,6 +359,9 @@ footer{
     #column1{
         display: none;
     }
+    i{
+            padding: 0px;
+        }   	        
     /* #sticky-column{
         display: none;
     } */
